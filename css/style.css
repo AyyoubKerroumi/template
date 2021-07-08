@@ -48,12 +48,35 @@ button{
 	font-family: inherit;
 }
 
+.section-header{
+	padding: 100px 0 0 0;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.section-header .section-title{
+	font-size:35px;
+	text-transform: capitalize;
+}
+
+.section-header .line{
+	display: block;
+	height: 5px;
+	width: 60px;
+	background-color: blue;
+	margin: 20px auto 70px auto;
+}
+
 /* Header */
 
 .header{
 	position: fixed;
 	width: 100%;
 	z-index: 2;
+}
+
+.header{
+	overflow: hidden;
 }
 
 .header .logo{
@@ -73,12 +96,13 @@ button{
 	text-align: right;
 }
 
-.header .nav li{
+.header .nav > li{
 	display: inline-block;
 	list-style: none;
+	text-align: right
 }
 
-.header .nav li a{
+.header .nav > li > a{
 	text-decoration: none;
 	color: white;
 	display: block;
@@ -87,7 +111,7 @@ button{
 	
 }
 
-.header .nav li a.active:after,
+.header .nav > li > a.active:after,
 .header .nav li a:after{
 	content: "";
 	display: block;
@@ -97,18 +121,28 @@ button{
 	margin-top: 2px;
 }
 
-.header .nav li a:after{
+.header .nav > li > a:after{
 	width: 0;
 }
 
-.header .nav li a.active:after{
+.header .nav > li > a.active:after{
 	width: 100%;
 }
 
-.header .nav li a:hover:after{
+.header .nav > li > a:hover:after{
 	width: 100%;
 }
 
+.dropdown{
+	position: relative;
+}
+
+.dropdown-menu{
+	position: absolute;
+}
+
+
+/* Home section */
 .home{
 	position: relative;
 	height: 100vh;
@@ -160,3 +194,46 @@ button{
 	margin-left: 10px;
 }
 
+
+/**  section header **/
+
+/** about */
+
+.about-content{
+	overflow: hidden;
+	margin-bottom: 30px;
+}
+
+.about-item{
+	width: 30%;
+	float: left;
+	text-align: center;
+	border: 1px solid black;
+	padding: 50px 20px;
+}
+
+.about-item i{
+	color: #6196ff;
+	margin-bottom: 10px;
+}
+
+.about-item-title{
+	text-transform: uppercase;
+	margin-bottom: 10px;
+}
+
+.about-item-description{
+	margin-bottom: 10px;
+	line-height: 1.6;
+}
+
+.about-item-link{
+	text-transform: capitalize;
+	color: #6195ff;
+	text-decoration: none;
+}
+
+.about-item.mg{
+	margin:0 5%;
+
+}
