@@ -16,16 +16,21 @@
 			<div class="logo">
 				<img src="images/logo-alt.webp" alt="logo" draggable="false">
 			</div>
-			<div class="nav">
+			<ul class="nav">
 				<li><a href="#" class="active">Home</a></li>
 				<li><a href="#">About</a></li>
 				<li><a href="#">Portfolio</a></li>
 				<li><a href="#">Services</a></li>
 				<li><a href="#">Prices</a></li>
 				<li><a href="#">Team</a></li>
-				<li><a href="#">Blog</a></li>
+				<li class="dropdown">
+					<a href="#">Blog</a>
+					<ul class="dropdown-menu">
+						<li><a href="#">Blog Post</a></li>
+					</ul>
+				</li>
 				<li><a href="#">Contact</a></li>
-			</div>
+			</ul>
 			<div class="clear"></div>
 		</div>
 	</div>
@@ -40,5 +45,33 @@
 			</div><!-- ./home-content -->
 		</div>
 	</div><!-- ./home -->
+	<!-- section-header -->
+	<div class="section-header">
+		<h2 class="section-title">Welcome to our Website</h2>
+		<span class="line"></span>
+	</div>
+	<div class="container">
+		<div class="about-content">
+			<div class="about-item">
+				<i class="fa fa-cogs fa-2x"></i>
+				<h2 class="about-item-title">fully customizable</h2>
+				<p class="about-item-description">Maecenas tempus tellus eget condimentum rhoncus sem quam semper libero sit amet.</p>
+				<a href="#" class="about-item-link">read more</a>
+			</div>
+			<div class="about-item mg">
+				<i class="fa fa-magic fa-2x"></i>
+				<h2 class="about-item-title">Awesome Features</h2>
+				<p class="about-item-description">Maecenas tempus tellus eget condimentum rhoncus sem quam semper libero sit amet.</p>
+				<a href="#" class="about-item-link">read more</a>
+			</div>
+			<div class="about-item">
+				<i class="fa fa-mobile fa-2x"></i>
+				<h2 class="about-item-title">Fully Responsive</h2>
+				<p class="about-item-description">Maecenas tempus tellus eget condimentum rhoncus sem quam semper libero sit amet.</p>
+				<a href="#" class="about-item-link">read more</a>
+			</div>
+			</div>
+		</div>
+	</div>
 </body>
 </html>
